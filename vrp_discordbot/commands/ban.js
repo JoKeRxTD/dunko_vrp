@@ -9,7 +9,7 @@ exports.runcmd = (fivemexports, client, message, params) => {
         "description": `\nSuccess! Banned User with PermID: ${params[0]} With ${params[1]} hours and the reason: ${reason}`,
         "color": 5301186,
         "footer": {
-            "text": "vRP • Made by JamesUK#6793"
+            "text": "EGC Roleplay • Made by JoKeR#4571"
         },
         "timestamp": new Date()
     }

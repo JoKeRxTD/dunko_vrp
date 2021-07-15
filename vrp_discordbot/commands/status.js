@@ -4,7 +4,7 @@ exports.runcmd = (fivemexports, client, message, params) => {
         "description": `\nPlayers: ${GetNumPlayerIndices()}\n\nBot Developed by the vRPDevTeam(JamesUK)\n\nThank you for using and playing this server!\n\nThe IP is: connect ${client.ip}`,
         "color": 5301186,
         "footer": {
-            "text": "vRP • Made by JamesUK#6793"
+            "text": "EGC Roleplay • Made by JoKeR#4571"
         },
         "timestamp": new Date()
     }

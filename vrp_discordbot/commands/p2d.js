@@ -9,7 +9,7 @@ exports.runcmd = (fivemexports, client, message, params) => {
                             "description": `\nSuccess! PermID to Discord. This user is: <@${result[i].identifier.split(":")[1]}>`,
                             "color": 5301186,
                             "footer": {
-                                "text": "vRP • Made by JamesUK#6793"
+                                "text": "EGC Roleplay • Made by JoKeR#4571"
                             },
                             "timestamp": new Date()
                         }
@@ -22,7 +22,7 @@ exports.runcmd = (fivemexports, client, message, params) => {
                     "description": `\Failed! There is no Discord linked to this PermID!`,
                     "color": 5301186,
                     "footer": {
-                        "text": "vRP • Made by JamesUK#6793"
+                        "text": "EGC Roleplay • Made by JoKeR#4571"
                     },
                     "timestamp": new Date()
                 }
@@ -35,7 +35,7 @@ exports.runcmd = (fivemexports, client, message, params) => {
             "description": `\Failed! You need to enter a valid PermID!`,
             "color": 5301186,
             "footer": {
-                "text": "vRP • Made by JamesUK#6793"
+                "text": "EGC Roleplay • Made by JoKeR#4571"
             },
             "timestamp": new Date()
         }

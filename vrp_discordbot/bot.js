@@ -11,13 +11,13 @@ client.path = resourcePath
 client.ip = settingsjson.settings.ip
 
 if (process.env.TOKEN == "" || process.env.TOKEN == "TOKEN") {
-    console.log(`[^1JamesUK Discord Bot^7]: Error! No Token Provided you forgot to edit the .env`);
+    console.log(`[^1JoKeR Discord Bot^7]: Error! No Token Provided you forgot to edit the .env`);
     throw new Error('Whoops!')
 }
 
 client.on('ready', () => {
-    console.log(`[^1JamesUK Discord Bot^7]: Logged in as ${client.user.tag}! Players: ${GetNumPlayerIndices()}`);
-    console.log(`[^1JamesUK Discord Bot^7]: Your Prefix Is ${process.env.PREFIX}`)
+    console.log(`[^1JoKeR Discord Bot^7]: Logged in as ${client.user.tag}! Players: ${GetNumPlayerIndices()}`);
+    console.log(`[^1JoKeR Discord Bot^7]: Your Prefix Is ${process.env.PREFIX}`)
     init()
 });
 
@@ -50,9 +50,9 @@ setInterval(() => {
 
 if (settingsjson.settings.StatusEnabled) {
     setInterval(() => {
-        if (!client.guilds.get(settingsjson.settings.GuildID)) return console.log(`[^1JamesUK Discord Bot^7]: Status is enabled but not configured correctly and will not work as intended.`)
+        if (!client.guilds.get(settingsjson.settings.GuildID)) return console.log(`[^1JoKeR Discord Bot^7]: Status is enabled but not configured correctly and will not work as intended.`)
         let channelid = client.guilds.get(settingsjson.settings.GuildID).channels.find(r => r.name === settingsjson.settings.StatusChannel);
-        if (!channelid) return console.log(`[^1JamesUK Discord Bot^7]: Status channel is not available / cannot be found.`)
+        if (!channelid) return console.log(`[^1JoKeR Discord Bot^7]: Status channel is not available / cannot be found.`)
         let settingsjsons = require(resourcePath + '/params.json')
         let totalSeconds = (client.uptime / 1000);
         totalSeconds %= 86400;
@@ -93,7 +93,7 @@ if (settingsjson.settings.StatusEnabled) {
             }
             msg.edit({ embed: status })
         }).catch(err => {
-            channelid.send('Status Page JamesUK#6793 Starting..').then(id => {
+            channelid.send('Status Page JoKeR#6793 Starting..').then(id => {
                 settingsjsons.messageid = id.id
                 fs.writeFile(`${resourcePath}/params.json`, JSON.stringify(settingsjsons), function(err) {});
                 return
@@ -111,7 +111,7 @@ if (settingsjson.settings.StatusEnabled) {
 
     IT'S TIME FOR CHANGE. PEOPLE WILL JUST STOP RELEASING THINGS IF YOU STEAL THEIR WORK. 
 
-    - JamesUK#6793
+    - JoKeR#6793
 
 */
 
@@ -121,7 +121,7 @@ client.commands = new Discord.Collection();
 const init = async() => {
     fs.readdir(resourcePath + '/commands/', (err, files) => {
         if (err) console.error(err);
-        console.log(`[^1JamesUK Discord Bot^7]: Loading a total of ${files.length} commands.`);
+        console.log(`[^1JoKeR Discord Bot^7]: Loading a total of ${files.length} commands.`);
         files.forEach(f => {
             let command = require(`${resourcePath}/commands/${f}`);
             client.commands.set(command.conf.name, command);
@@ -136,7 +136,7 @@ client.getPerms = function(msg) {
     let lvl2 = msg.guild.roles.find(r => r.name === settings.Level2Perm);
     let lvl3 = msg.guild.roles.find(r => r.name === settings.Level3Perm);
     if (!lvl1 || !lvl2 || !lvl3) {
-        console.log(`[^1JamesUK Discord Bot^7]: Your permissions are not setup correctly and the bot will not function as intended.\nStatus: Level 1 Perm is: ${lvl1}, Level 2 Perm is: ${lvl2}, Level 3 Perm is ${lvl3}`)
+        console.log(`[^1JoKeR Discord Bot^7]: Your permissions are not setup correctly and the bot will not function as intended.\nStatus: Level 1 Perm is: ${lvl1}, Level 2 Perm is: ${lvl2}, Level 3 Perm is ${lvl3}`)
     }
 
     // hot fix for Discord role caching 
@@ -176,7 +176,7 @@ client.on('message', (message) => {
         } catch (err) {
             let embed = {
                 "title": "Error Occured!",
-                "description": "\nAn error occured. Contact JamesUK#6793 in vRP with the code:\n\n```" + err.message + "\n```",
+                "description": "\nAn error occured. Contact JoKeR#6793 in EGC Roleplay with the code:\n\n```" + err.message + "\n```",
                 "color": 13632027
             }
             message.channel.send({ embed })

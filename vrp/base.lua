@@ -10,19 +10,19 @@ local version = module("version")
 
 print("^5[VRP]: ^7" .. 'Checking for vRP Updates..')
 
-PerformHttpRequest("https://raw.githubusercontent.com/DunkoUK/dunko_vrp/master/vrp/version.lua",function(err,text,headers)
-if err == 200 then
-    text = string.gsub(text,"return ","")
-    local r_version = tonumber(text)
-    if version ~= r_version then
-        print("^5[VRP]: ^7" .. 'A Dunko Update is available from: https://github.com/DunkoUK/dunko_vrp')
-    else 
-        print("^5[VRP]: ^7" .. 'You are running the most up to date Dunko Version. Thanks for using Dunko_vRP and thanks to our contributors for updating the project. Support Found At: https://discord.gg/b8wQn2XqDt')
-    end
-else
-    print("[vRP] unable to check the remote version")
-end
-end, "GET", "")
+-- PerformHttpRequest("https://raw.githubusercontent.com/DunkoUK/dunko_vrp/master/vrp/version.lua",function(err,text,headers)
+-- if err == 200 then
+--     text = string.gsub(text,"return ","")
+--     local r_version = tonumber(text)
+--     if version ~= r_version then
+--         print("^5[VRP]: ^7" .. 'A Dunko Update is available from: https://github.com/DunkoUK/dunko_vrp')
+--     else 
+--         print("^5[VRP]: ^7" .. 'You are running the most up to date Dunko Version. Thanks for using Dunko_vRP and thanks to our contributors for updating the project. Support Found At: https://discord.gg/b8wQn2XqDt')
+--     end
+-- else
+--     print("[vRP] unable to check the remote version")
+-- end
+-- end, "GET", "")
 
 
 Debug.active = config.debug

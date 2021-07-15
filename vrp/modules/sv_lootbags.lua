@@ -4,7 +4,7 @@ local LootBagEntities = {}
 
 
 --[[
-    QUICK LOOTBAGS MADE BY JAMESUK MAY CONTAIN BUGS. JAMESUK DOES NOT GURANTEE THIS SCRIPT TO BE BUG FREE.
+    QUICK LOOTBAGS MADE BY JoKeR#4571 MAY CONTAIN BUGS. JoKeR#4571 DOES NOT GURANTEE THIS SCRIPT TO BE BUG FREE.
     Also, awful code design as was quickly created will be revamped in the rewrite of Dunko vRP.
 ]]
 

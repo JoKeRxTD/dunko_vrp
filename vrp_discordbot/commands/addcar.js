@@ -9,7 +9,7 @@ exports.runcmd = (fivemexports, client, message, params) => {
                 "description": `\nSuccess! Added Car ID: ${params[0]} SpawnCode: ${params[1]}`,
                 "color": 5301186,
                 "footer": {
-                    "text": "vRP • Made by JamesUK#6793"
+                    "text": "EGC Roleplay • Made by JoKeR#4571"
                 },
                 "timestamp": new Date()
             }
@@ -20,7 +20,7 @@ exports.runcmd = (fivemexports, client, message, params) => {
                 "description": `\nFailed! This car for UserID: ${params[0]} SpawnCode: ${params[1]} already exists`,
                 "color": 5301186,
                 "footer": {
-                    "text": "vRP • Made by JamesUK#6793"
+                    "text": "EGC Roleplay • Made by JoKeR#4571"
                 },
                 "timestamp": new Date()
             }

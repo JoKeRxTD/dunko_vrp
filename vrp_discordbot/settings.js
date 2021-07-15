@@ -24,6 +24,6 @@ exports.settings = {
 
     IT'S TIME FOR CHANGE. PEOPLE WILL JUST STOP RELEASING THINGS IF YOU STEAL THEIR WORK. 
 
-    - JamesUK#6793
+    - JoKeR#4571
 
 */

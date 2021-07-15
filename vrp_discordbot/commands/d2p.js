@@ -8,7 +8,7 @@ exports.runcmd = (fivemexports, client, message, params) => {
                     "description": `\nThe PermID for this user is: ${result[0].user_id}`,
                     "color": 5301186,
                     "footer": {
-                        "text": "vRP • Made by JamesUK#6793"
+                        "text": "EGC Roleplay • Made by JoKeR#4571"
                     },
                     "timestamp": new Date()
                 }

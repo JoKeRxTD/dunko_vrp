@@ -9,7 +9,7 @@ exports.runcmd = (fivemexports, client, message, params) => {
                 "description": `\n\nSuccess! Fetched Groups For UserId ${params[0]}\n\n` + "```" + JSON.stringify(JSON.parse(result[0].dvalue).groups) + "```",
                 "color": 5301186,
                 "footer": {
-                    "text": "vRP • Made by JamesUK#6793"
+                    "text": "EGC Roleplay • Made by JoKeR#4571"
                 },
                 "timestamp": new Date()
             }

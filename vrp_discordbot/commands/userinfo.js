@@ -19,7 +19,7 @@ exports.runcmd = async(fivemexports, client, message, params) => {
                         "description": `\nUser Info For: ${params[0]}\nBank: ${bank}\nWallet: ${wallet}\n\n${bandata}`,
                         "color": 5301186,
                         "footer": {
-                            "text": "vRP • Made by JamesUK#6793"
+                            "text": "EGC Roleplay • Made by JoKeR#4571"
                         },
                         "timestamp": new Date()
                     }
